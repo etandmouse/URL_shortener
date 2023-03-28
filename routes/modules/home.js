@@ -2,7 +2,16 @@ const express = require('express')
 const router = express.Router()
 
 router.get('/', (req, res) => {
-  res.send('This is sortenURL project.')
+  res.render('index')
 })
 
+router.post('/URL', (req, res) => {
+  const URL = req.body.URL
+  console.log(req.body)
+  res.render('success', { URL })
+})
+
+router.get('/:shortURL', (req, res) => {
+  res.redirect('http://www.googl.com')
+})
 module.exports = router
