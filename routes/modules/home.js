@@ -5,7 +5,7 @@ router.get('/', (req, res) => {
   res.render('index')
 })
 
-router.post('/URL', (req, res) => {
+router.post('/', (req, res) => {
   const URL = req.body.URL
   console.log(req.body)
   res.render('success', { URL })
