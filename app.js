@@ -4,6 +4,7 @@ const exphbs = require('express-handlebars')
 const bodyParser = require('body-parser')
 
 const routes = require('./routes')
+require('./config/mongoose')
 
 const PORT = 3000
 

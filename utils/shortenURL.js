@@ -10,7 +10,6 @@ function shortenURL(len) {
     let Index = randomIndex(letters)
     shortText += letters[Index]
   }
-  console.log(shortText)
   return shortText
 }
 
