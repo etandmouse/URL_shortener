@@ -7,7 +7,7 @@ const routes = require('./routes')
 require('./config/mongoose')
 app.use(express.static("public"))
 
-const PORT = 3000
+const PORT = process.env.PORT || 3000
 
 app.engine('hbs', exphbs({ default: 'main', extname: '.hbs' }))
 app.set('view engine', 'hbs')
