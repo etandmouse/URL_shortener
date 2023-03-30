@@ -1,10 +1,8 @@
-<form method="POST">
-  <div>
-    <h3>Success! Please use this link:</h3>
-    <a href="{{ url }}" target="_blank"> {{ url }} </a>
-  </div>
-  <div>
-    <button>Copy</button>
-  </div>
-  <a href="/">首頁</a>
-</form>
+<div>
+  <h3>Success! Please use this link:</h3>
+  <a id="URL" href="{{ url }}" target="_blank"> {{ url }} </a>
+</div>
+<div>
+  <button class="mt-2 btn btn-success" type="button" onclick="copy()">Copy</button>
+</div>
+<a href="/">首頁</a>

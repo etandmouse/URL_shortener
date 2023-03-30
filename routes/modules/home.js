@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
 })
 
 router.post('/', (req, res) => {
-  const url = req.body.url
+  const url = req.body.url.trim()
   const fullUrl = `${req.protocol}://${req.get('host')}${req.originalUrl}`
 
   //find url in DB

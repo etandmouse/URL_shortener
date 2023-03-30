@@ -5,6 +5,7 @@ const bodyParser = require('body-parser')
 
 const routes = require('./routes')
 require('./config/mongoose')
+app.use(express.static("public"))
 
 const PORT = 3000
 
